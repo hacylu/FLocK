@@ -1,7 +1,14 @@
 # FLocK
 Code and GUI for Feature-driven Local Cell Graph (FLocK): New Computational Pathology based descriptors 
+our script can be found here: https://www.sciencedirect.com/science/article/abs/pii/S136184152030267X
 
 show_exmaple_v2.m shows how to use the code for FLocK feature extraction, as well as the FLocK visulization.
 quantitative_analysis_3d.m shows an example of quantitative analysis of FLocK features (see appendix 2 for details).
 To use the GUI, please run FeDeG_GUI.m.
-Note that in the code we used FeDeG to replce FLocK. 
+Note that in the code we used name FeDeG to replce FLocK. 
+
+Citation:
+1. Cheng Lu, C.F. Koyuncu, X.Wang, P. Prasanna, G. Corredor, P. Leo, A. Janowczyk, K. Bera, V. Velcheti, A. Madabhushi, Feature-driven Local Cell Graph (FLocK): New computational pathology based descriptors for prognosis of lung cancer and HPV status of oropharyngeal cancers," Medical Image Analysis, https://doi.org/10.1016/j.media.2020.101903. 2020.
+2.	Cheng Lu, Xiangxue Wang, Prateek Prasanna, Geoffrey Sedor, Kaustav Bera, German Corredor, Anant Madabushi. Feature Driven Local Cell Graph (FeDeG): Predicting Overall Survival in Early Stage Lung Cancer. 21st International Conference On Medical Image Computing & Computer Assisted Intervention (MICCAI 2018). Granada Spain. September 16-20 2018.
+
+
