@@ -2,7 +2,7 @@
 Code and GUI for Feature-driven Local Cell Graph (FLocK): New Computational Pathology based descriptors 
 our script can be found here: https://www.sciencedirect.com/science/article/abs/pii/S136184152030267X
 
-show_exmaple_v2.m shows how to use the code for FLocK feature extraction, as well as the FLocK visulization.
+show_example_v2.m shows how to use the code for FLocK feature extraction, as well as the FLocK visulization.
 quantitative_analysis_3d.m shows an example of quantitative analysis of FLocK features (see appendix 2 for details).
 To use the GUI, please run FeDeG_GUI.m.
 Note that in the code we used name FeDeG to replce FLocK. 
