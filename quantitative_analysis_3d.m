@@ -10,7 +10,7 @@ I_normRed=I_norm(:,:,1);
 p.scales=3:2:10;% the scale of nuclei
 [nuclei, properties] = nucleiSegmentationV2(I_normRed,p);
 
-show(I,1);hold on;
+figure; imshow(I);hold on;
 for k = 1:length(nuclei)
     plot(nuclei{k}(:,2), nuclei{k}(:,1), 'g-', 'LineWidth', 2);
 end
