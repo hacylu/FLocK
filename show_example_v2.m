@@ -36,8 +36,8 @@ para.properties=properties; % you can check out the nuclear properites
 para.shownuclei_thiness=1; % the visual effect of nuclei 
 para.shownucleiconnection_thiness=3; % the visual effect of FeDeG
 
-para.num_fixed_types=2; % specify the phenotype numbers in the image
-[clustCent,data2cluster,cluster2dataCell,data_other_attribute,clust2types,typeCent]=Lconstruct_FeDeG_v2(I,para);
+para.num_fixed_types=0; % specify the phenotype numbers in the image
+[clustCent,data2cluster,cluster2dataCell,data_other_attribute,clust2types,typeCent]=Lconstruct_FeDeG_v3(I,para);
 
 %% **** 3 extracting FeDeG features
 para.I=I;
@@ -45,5 +45,5 @@ para.data_other_attribute=data_other_attribute;
 para.debug=1;
 para.clust2types=clust2types;
 para.typeCent=typeCent;
-[set_feature,set_feature_name]=L_get_FeDeG_features_v2(clustCent,cluster2dataCell,para);
+[set_feature,set_feature_name]=L_get_FeDeG_features_v3(clustCent,cluster2dataCell,para);
 set_feature_name=set_feature_name';
