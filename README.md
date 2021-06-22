@@ -4,9 +4,13 @@ Our manuscript can be found here: https://www.sciencedirect.com/science/article/
 
 **How to use:**
 show_example_v2.m shows how to use the code for FLocK feature extraction, as well as the FLocK visulization.
+
 quantitative_analysis_3d.m shows an example of quantitative analysis of FLocK features (see appendix 2 for details).
-To use the GUI, please run FeDeG_GUI.m.
+
+Please run FeDeG_GUI.m for the GUI.
+
 Note that in the code we used name FeDeG to replace FLocK. 
+
 We suggest you use the GUI to decide the parameter for you image at hand first.
 
 Citation:
