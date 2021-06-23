@@ -218,3 +218,4 @@ label_empty=logical(label_empty);
 
 clustCent(:,logical(label_empty))=[];%sum(label_empty)
 cluster2dataCell(logical(label_empty))=[];
+clust2types(logical(label_empty))=[];
