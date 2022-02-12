@@ -97,12 +97,24 @@ for i=1:size(clustCent,2)
         end
         if size(cur_centroid,1)==2
             tmp1=para.nuclei{cur_cluster2data(1)};
+%             if size(tmp1,1)~=1
+%                 tmp1(2:end,:)=[];
+%             end
             tmp2=para.nuclei{cur_cluster2data(2)};
+%             if size(tmp2,1)~=1
+%                 tmp2(2:end,:)=[];
+%             end
             tmp=[tmp1;tmp2];
             cur_centroid=[tmp(:,2) tmp(:,1)];
-            K=convhull (cur_centroid(:,1),cur_centroid(:,2));
-            set_polygon{i}=[cur_centroid(K,1),cur_centroid(K,2)];
-            set_FeDeG_size(i)=polyarea(cur_centroid(K,1),cur_centroid(K,2));
+            if size(cur_centroid,1)>5
+                K=convhull (cur_centroid(:,1),cur_centroid(:,2));
+                set_polygon{i}=[cur_centroid(K,1),cur_centroid(K,2)];
+                set_FeDeG_size(i)=polyarea(cur_centroid(K,1),cur_centroid(K,2));
+            else
+                set_polygon{i}=[tmp(:,2) tmp(:,1)];
+                set_FeDeG_size(i)=NaN;
+                warning('please check your nuclei input, a nuclear boundary set should greater than 5 pionts.');
+            end
         end
     end
 end
