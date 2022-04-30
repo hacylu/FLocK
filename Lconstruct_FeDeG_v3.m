@@ -60,7 +60,7 @@ if strcmp(para.feature_space,'Centroid-Area')
     AlldataPts(:,idxF)=[ss.Area];
     dataPts=AlldataPts(:,1:3);
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -75,7 +75,7 @@ if strcmp(para.feature_space,'Centroid-Area-Eccentricity')
     idxF=idxF+1;
     dataPts(:,idxF)=[ss.Eccentricity];
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -90,7 +90,7 @@ if strcmp(para.feature_space,'Centroid-Area-MeanIntensity')
     idxF=idxF+1;
     dataPts(:,idxF)=[ss.MeanIntensity]; 
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -103,7 +103,7 @@ if strcmp(para.feature_space,'Centroid-MeanIntensity')
     idxF=3;
     dataPts(:,idxF)=[ss.MeanIntensity]; 
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -116,7 +116,7 @@ if strcmp(para.feature_space,'Centroid-Eccentricity')
     idxF=3;
     dataPts(:,idxF)=[ss.Eccentricity];    
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -129,7 +129,7 @@ if strcmp(para.feature_space,'Centroid-Longness')
     idxF=3;
     dataPts(:,idxF)=[ss.MajorAxisLength]./[ss.MinorAxisLength];     
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -142,7 +142,7 @@ if strcmp(para.feature_space,'Centroid-Circularity')
     idxF=3;
     dataPts(:,idxF)=[ss.Circularity];  
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
@@ -157,7 +157,7 @@ if strcmp(para.feature_space,'Centroid-Area-Eccentricity-MeanIntensity')
     dataPts(:,idxF)=[ss.Eccentricity]; idxF=idxF+1;
     dataPts(:,idxF)=[ss.MeanIntensity]; 
     
-    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v2(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
+    [clustCent,data2cluster,cluster2dataCell,clust2types,typeCent] = MeanShiftCluster_v3(dataPts',para.bandWidth_space, para.bandWidth_features,para.num_fixed_types);
     FM=dataPts(:,1:2)';
     data_other_attribute=dataPts(:,3:end)';
 end
